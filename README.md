@@ -15,6 +15,6 @@ The *CapiTool* application is publicly available through the shiny.io server at:
 A brief presentation of the tool may be found in [*CapiTool Overview*](http://rpubs.com/WillahScott/capitool). The presentation is available through RPubs and has been developed using [slidify](http://github.com/ramnathv/slidify).
 
 
-*Note: This repository corresponds to the slidify presentation, for the CapiTool app refer to: https://bitbucket.org/WillahScott/capitool .
+*Note: This repository corresponds to the slidify presentation, for the CapiTool app refer to: https://bitbucket.org/WillahScott/capitool .*
 
 ##### By WillahScott - WiDo Stuff
