@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CapiTool</title>
+  <meta name="description" content="">
+  <meta name="author" content="WillahScott">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/default.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+<link rel="stylesheet" href = "assets/css/slide_style.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  
+  <style>
+    .reveal h2 {
+        color: orange;
+        text-align: center;
+        padding-bottom: 15px;
+        font-family: Tahoma, sans-serif;
+        font-style: italic
+    }
+    .reveal h3 {
+        color: lightblue;
+        text-align: center;
+        padding-bottom: 25px;
+        font-family: Tahoma, sans-serif;
+        font-style: normal
+    }
+    .extraSpace {
+        padding-top: 25px !important;        
+    } 
+    .author {
+        padding-top: 70px !important;
+        color: gray;
+        text-align: right;
+        font-family: Tahoma, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+    }
+    .author2 {
+        padding-top: 10px !important;
+        color: gray;
+        text-align: right;
+        font-family: Tahoma, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+        font-size: 0.8em !important;
+    }
+    .smallText {
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+        text-align: left;
+    }
+    .smallText2 {
+        padding-top: 15px !important;        
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+        text-align: left;
+    }
+    .smallNote {
+        padding-top: 20px !important;
+        color: grey;
+        text-align: left;
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+    }
+    ul.in {
+        list-style-type: square;
+        font-size: 0.7em !important;
+        text-align: left;
+    }
+    ul.smallIn {
+        list-style-type: square;
+        font-size: 0.65em !important;
+    }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<h2>CapiTool</h2>
+  
+
+<p>Capital under stress scenarios projection tool</p>
+
+<p class="author">by <span style="color:white; font-weight:bold">WillahScott</span> @ WiDo Stuff</p>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h3><em>CapiTool</em> Overview</h3>
+  <p style="color: orange; font-style: italic; font-size: 1em">Regulatory capital requirements (for financial institutions) simulation under different user-defined macoeconomic scenarios</p>
+
+<p><a href="http://willahscott.shinyapps.io/CapiToolApp" target="_blank">
+    <img src="img/CapiTool.gif" alt="CapiTool Overview" style="width:600px; height:400px">
+</a></p>
+
+<p class="smallNote">The app is available through shinyapps.io. Click image to redirect.</p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h3><i>CapiTool</i> Usage</h3>
+  <h4>Inputs</h4>
+
+<ul class="in">
+    <li><span style="color: grey; font-weight:bold">Macroeconomic variables</span></li>
+    <ul class="smallIn">
+        <li><span style="color: grey; font-weight:bold">Variables:</span> GDP - Unemployment - Consumer Price Index - House Prices - Rates</li>
+        <li><span style="color: grey; font-weight:bold">Scenarios:</span> <span style="color:green">Base</span> - <span style="color:orange">Adverse</span> - <span style="color:red">Severely Adverse</span> - <span style="color:darkred">Extreme Recession</span></li>
+    </ul>
+    <li><span style="color: grey; font-weight:bold">Projection Window:</span> 2015 - 2016 - 2017</li>
+    <li><span style="color: grey; font-weight:bold">Product Breakdown:</span> Mortgage - Consumer Loan - Credit Card - Lease </li>
+</ul>
+
+<h4 class="extraSpace">Outputs</h4>
+
+<ul class="in">
+    <li>Total projected capital requirements</li>
+    <li>Projected capital requirements by product</li>
+</ul>
+
+<p class="smallNote">Basic usage information may be found under the <i>About</i> tab in the application.</p>
+
+<script>
+$('h4').addClass('fragment')
+$('ul.in').addClass('fragment')
+$('ul.smallIn').addClass('fragment')
+$('p.smallNote').addClass('fragment')
+</script>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h3>Stress Testing Regulation</h3>
+  <p class="smallText">The <span style="color: grey; font-weight: bold">Capital Requirements Directive (CRD IV)</span> establishes the amount of capital a bank must have allocated, given as a set of functions of the estimated probability of default (for performing products), severity and exposure, one function for each different product.</p>
+
+<p class="smallText2">The Stress Test exercise regulation put forth by the EBA requires a <span style="color: grey; font-weight: bold">3 year projection</span> (or US Stress Test, CCAR establishes 9 quarters projection) of regulatory capital. <span style="color: orange; font-variant: small-caps">CapiTool</span> allows up to 3 year projection.</p>
+
+<p class="smallText2">The (European) Stress Test exercise <span style="color: grey; font-weight: bold">requires two scenarios</span> set forth by the EBA, as well as any scenarios required by the national regulators. For the US CCAR exercise, 3 exercises are necessary, as well as two internal scenarios which the institution has to create.</p>
+
+<p class="smallText2"><span style="color: orange; font-variant: small-caps">CapiTool</span> stresses the different factors (mainly probability of default and severity) and simulates the projected capital requirements under the scenario defined by the user.</p>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h3>R Implementation</h3>
+  <p class="smallText">The app is implemented in R through RStudio's shiny package, which needs a <span style="font-family: "Courier New", monospace; color: grey">ui.R</span> and <span style="font-family: "Courier New", monospace; color: grey">server.R</span>. Additionally all further calculations take place in the <span style="font-family: "Courier New", monospace; color: grey">simulation.R</span>.</p>
+
+<h4 class="extraSpace">Data</h4>
+
+<p class="smallText"><span style="color: orange; font-variant: small-caps">CapiTool</span> uses two loan databases:</p>
+
+<p style="color: grey; font-family: Tahoma, sans-serif; font-size: 0.8em">Performing portfolio</p>
+
+<pre class="prettyprint lang-r">
+    source("simulation.R")
+    table(performing.df$Products)
+</pre>
+
+<pre><code>## 
+## Consumer Loan   Credit Card         Lease      Mortgage 
+##           322           665           176           395
+</code></pre>
+
+<p style="color: grey; font-family: Tahoma, sans-serif; font-size: 0.8em">Defaulted portfolio</p>
+
+<pre class="prettyprint lang-r">
+    table(defaulted.df$Products)
+</pre>
+
+<pre><code>## 
+## Consumer Loan   Credit Card         Lease      Mortgage 
+##           310            31           171           157
+</code></pre>
+
+<p class="author2">by <span style="color:white; font-weight:bold">WillahScott</span> @ WiDo Stuff</p>
+
+<script>
+$('p.author2').addClass('fragment')
+</script>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>

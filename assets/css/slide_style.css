@@ -1,0 +1,65 @@
+
+<style>
+    .reveal h2 {
+        color: orange;
+        text-align: center;
+        padding-bottom: 15px;
+        font-family: Tahoma, sans-serif;
+        font-style: italic
+    }
+    .reveal h3 {
+        color: lightblue;
+        text-align: center;
+        padding-bottom: 25px;
+        font-family: Tahoma, sans-serif;
+        font-style: normal
+    }
+    .extraSpace {
+        padding-top: 25px !important;        
+    } 
+    .author {
+        padding-top: 70px !important;
+        color: gray;
+        text-align: right;
+        font-family: Tahoma, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+    }
+    .author2 {
+        padding-top: 10px !important;
+        color: gray;
+        text-align: right;
+        font-family: Tahoma, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+        font-size: 0.8em !important;
+    }
+    .smallText {
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+        text-align: left;
+    }
+    .smallText2 {
+        padding-top: 15px !important;        
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+        text-align: left;
+    }
+    .smallNote {
+        padding-top: 20px !important;
+        color: grey;
+        text-align: left;
+        font-family: Tahoma, sans-serif;
+        font-size: 0.6em !important;
+    }
+    ul.in {
+        list-style-type: square;
+        font-size: 0.7em !important;
+        text-align: left;
+    }
+    ul.smallIn {
+        list-style-type: square;
+        font-size: 0.65em !important;
+    }
+</style>
+
